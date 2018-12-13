@@ -6,12 +6,13 @@ import { Photo } from './photo';
 
 const API = environment.API;
 
+console.log(API);
+
 @Injectable({providedIn: 'root'})
 export class PhotoService {
   constructor(private http: HttpClient) { }
 
   listFromUser(userName: string){
-    console.log(API);
     return this.http
     .get<Photo[]>(API + '/' + userName + '/photos');
   }
