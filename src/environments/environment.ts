@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  API: "http://node-galeria1.herokuapp.com"
+  API: "https://node-galeria1.herokuapp.com"
 };
 
 /*
