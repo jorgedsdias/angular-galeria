@@ -6,8 +6,6 @@ import { Photo } from './photo';
 
 const API = environment.API;
 
-console.log(API);
-
 @Injectable({providedIn: 'root'})
 export class PhotoService {
   constructor(private http: HttpClient) { }
