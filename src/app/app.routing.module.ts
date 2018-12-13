@@ -6,6 +6,11 @@ import { PhotoListResolver } from './photos/photo-list/photo-list.resolver';
 
 const routes: Routes = [
     { 
+        path: '',
+        redirectTo: '/user/flavio', 
+        pathMatch: 'full' 
+    },
+    {
         path: 'user/:userName', 
         component: PhotoListComponent,
         resolve: {
